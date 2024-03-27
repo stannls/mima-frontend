@@ -25,7 +25,7 @@
   margin: 0px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: auto;
   background: #282a36;
 }
 .controls {
@@ -36,6 +36,7 @@
   flex-direction: row;
   flex: 0 1 95%;
   border-top: 2px solid #bd93f9;
+  overflow: hidden;
 }
 
 html, body {
@@ -50,12 +51,13 @@ html, body {
 }
 .debugger-content {
 	flex: 0 1 30%;
-  overflow: hidden;
+  overflow: auto;
   float: left;
 }
 .editor-content {
   border-right: 2px solid #bd93f9;
 }
+
 </style>
 <script lang="ts">
 import {defineComponent} from "vue";
