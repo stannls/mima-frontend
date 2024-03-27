@@ -13,5 +13,10 @@
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.3.3",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.24.0"
   }
 }
