@@ -14,7 +14,7 @@
     "vite-plugin-wasm": "^3.3.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
-    "wasm-mima": "^0.1.0"
+    "wasm-mima": "^0.2.0"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.3.3",

@@ -2424,9 +2424,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.668:
-  version "1.4.717"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.717.tgz#99db370cae8cd090d5b01f8748e9ad369924d0f8"
-  integrity sha512-6Fmg8QkkumNOwuZ/5mIbMU9WI3H2fmn5ajcVya64I5Yr5CcNmO7vcLt0Y7c96DCiMO5/9G+4sI2r6eEvdg1F7A==
+  version "1.4.718"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.718.tgz#b8fa65633d6bcfd4368afa160288d2d0e34bc9a5"
+  integrity sha512-6FpOapKxHuRNUoNQEP54sAacMod/XX68/Oaau+UoTEC8yxy5lR8jAvTlyrb60oZ9OtuUuAEtKvCQOJm6S4MtBQ==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -5873,10 +5873,10 @@ vue@^3.4.21:
     "@vue/server-renderer" "3.4.21"
     "@vue/shared" "3.4.21"
 
-wasm-mima@^0.1.0:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/wasm-mima/-/wasm-mima-0.1.1.tgz#04f4bf2699a4b33199e98c7932cc97eb17418a65"
-  integrity sha512-o1ZyOwcPxenoOh6WdHgXDZdJG3EjeuMPjBTg3J3nUJCxtmE7108WvTCe/ktm6ZN8nN84C/Iq/WeBpdF9461PzA==
+wasm-mima@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/wasm-mima/-/wasm-mima-0.2.0.tgz#bddeff6079ca134d17e4d2154155fd8d8943bfe3"
+  integrity sha512-9npHlDM6uATQOdq3XycL8tsDix4RZY3vZBXHaJGMFBrwUmj5Nkw82Jr3zKMxlqx3nxSyJ8WQNyLCp0w+sTXiDQ==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"

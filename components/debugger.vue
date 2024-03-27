@@ -5,10 +5,10 @@ import {Command, Instruction} from "wasm-mima";
 <template>
   <div class="debugger">
     <div class="values">
-      <p>Akku: {{ store.mima.get_debug().akku }}</p>
-      <p>IAR: {{ store.mima.get_debug().iar }}</p>
-      <p>Next instruction: {{ Instruction[store.mima.get_next_instruction().instruction] }}
-        {{ store.mima.get_next_instruction().value }}</p>
+      <p>Akku: {{ store.debug_info.akku }}</p>
+      <p>IAR: {{ store.debug_info.iar }}</p>
+      <p>Next instruction: {{ store.debug_info.next_instruction_name }}
+        {{ store.debug_info.next_instruction_value }}</p>
     </div>
     <div class="memory">
       <table>
@@ -18,8 +18,9 @@ import {Command, Instruction} from "wasm-mima";
           <th>Instruction</th>
         </tr>
         <tr v-for="index in 100" :key="index">
-          <td>{{index}}</td>
-          <td>{{store.mima.read_adress(index)}}</td>
+          <td>{{index-1}}</td>
+          <td>{{store.mima.read_adress(index-1)}}</td>
+          <td>{{Instruction[Command.from_usize(store.mima.read_adress(index-1)).instruction]}} {{Command.from_usize(store.mima.read_adress(index-1)).value}}</td>
         </tr>
       </table>
     </div>
@@ -32,12 +33,12 @@ import {Command, Instruction} from "wasm-mima";
 }
 </style>
 <script lang="ts">
-import {MimaDebug} from "wasm-mima";
-
+import {Instruction, MimaDebug} from "wasm-mima";
+import {store} from "~/store.js";
 export default {
   props: {
     state: MimaDebug,
-  },
+  }
 
 }
 </script>
