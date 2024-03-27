@@ -5,7 +5,7 @@
 </template>
 <style scoped>
 textarea {
-  	border: 0;
+  border: 0;
 	resize: none;
 	outline: none;
 	box-sizing: border-box;

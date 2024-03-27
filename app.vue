@@ -8,7 +8,7 @@
 				<debugger></debugger>
 			</div>
  		</div>
-	</body> 
+	</body>
 </template>
 
 <style>
@@ -18,7 +18,6 @@
   left: 0;
   bottom: 0;
   right: 0;
-  overflow: hidden;
   background: lime;
   padding: 0px;
   margin: 0px;
@@ -37,4 +36,5 @@ html, body {
 	flex: 0 1 40%;
 }
 </style>
-
+<script lang="ts">
+</script>
