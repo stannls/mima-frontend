@@ -25,6 +25,8 @@
   margin: 0px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  background: #282a36;
 }
 .controls {
   flex: 0 1 5%;
@@ -33,17 +35,26 @@
   display: flex;
   flex-direction: row;
   flex: 0 1 95%;
+  border-top: 2px solid #bd93f9;
 }
 
 html, body {
   padding: 0px;
   margin: 0px;
 }
+
 .editor-content {
-	flex: 0 1 60%;
+	flex: 0 1 70%;
+  overflow: hidden;
+  float: left;
 }
 .debugger-content {
-	flex: 0 1 40%;
+	flex: 0 1 30%;
+  overflow: hidden;
+  float: left;
+}
+.editor-content {
+  border-right: 2px solid #bd93f9;
 }
 </style>
 <script lang="ts">

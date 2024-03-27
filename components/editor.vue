@@ -12,6 +12,10 @@ textarea {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  background: #282a36;
+  font-size: 14px;
+  color: #ff79c6 !important;
+  overflow: auto;
 }
 .editor {
   padding: 0px;

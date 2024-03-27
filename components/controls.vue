@@ -27,10 +27,18 @@ function reset_action() {
 
 <template>
   <div class="root">
-    <button v-on:click="compile_action">Compile</button>
-    <button v-on:click="reset_action">Reset</button>
-    <button v-on:click="run_action">Run</button>
-    <button v-on:click="step_action">Step</button>
+    <el-button v-on:click="compile_action" title="Compile">
+      <Icon name="material-symbols:settings"></Icon>
+    </el-button>
+    <el-button v-on:click="reset_action" title="Reset">
+      <Icon name="ic:baseline-stop-circle"></Icon>
+    </el-button>
+    <el-button v-on:click="run_action" title="Run">
+      <Icon name="cil:media-play"></Icon>
+    </el-button>
+    <el-button v-on:click="step_action" title="Step">
+      <Icon name="cil:media-step-forward"></Icon>
+    </el-button>
   </div>
 </template>
 
@@ -38,5 +46,16 @@ function reset_action() {
 .root {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+button {
+  background: #bd93f9;
+  color: #f8f8f2;
+  border: none;
+}
+button:hover{
+  border: 1px solid #888;
+  background-color: #ddd;
 }
 </style>
