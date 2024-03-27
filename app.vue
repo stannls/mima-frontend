@@ -1,7 +1,12 @@
 <template>
 	<body>
 		<div class="main">
-			<editor></editor>
+			<div class="main-content editor-content">
+				<editor></editor>
+			</div>
+			<div class="main-content debugger-content">
+				<debugger></debugger>
+			</div>
  		</div>
 	</body> 
 </template>
@@ -17,10 +22,19 @@
   background: lime;
   padding: 0px;
   margin: 0px;
+  display: flex;
+  flex-direction: row;
 }
 
 html, body {
   padding: 0px;
   margin: 0px;
 }
+.editor-content {
+	flex: 0 1 60%;
+}
+.debugger-content {
+	flex: 0 1 40%;
+}
 </style>
+
