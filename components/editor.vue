@@ -1,6 +1,6 @@
 <template>
 	<div class="editor">
-    <textarea id="editor-textarea" @input="updateContent($event.target.value)">; Enter your assembly code here.</textarea>
+    <textarea id="editor-textarea" @input="updateContent($event.target.value)" spellcheck="false">; Enter your assembly code here.</textarea>
   </div>
 </template>
 
@@ -16,6 +16,7 @@ textarea {
   font-size: 14px;
   color: #ff79c6 !important;
   overflow: auto;
+
 }
 .editor {
   padding: 0px;
