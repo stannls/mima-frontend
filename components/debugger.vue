@@ -18,7 +18,10 @@ import {Command, Instruction} from "wasm-mima";
           <th>Instruction</th>
         </tr>
         <tr v-for="index in 10001" :key="index" class="table-row">
-          <td>{{index-1}}</td>
+          <td>
+		  <p v-if="index - 1 === store.debug_info.iar">-> {{index-1}}</p>
+		  <p v-else> {{index-1}}</p>
+	  </td> 
           <td>{{store.mima.read_adress(index-1)}}</td>
           <td>{{Instruction[Command.from_usize(store.mima.read_adress(index-1)).instruction]}} {{Command.from_usize(store.mima.read_adress(index-1)).value}}</td>
         </tr>
