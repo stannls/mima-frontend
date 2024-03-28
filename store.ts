@@ -1,6 +1,5 @@
 import {reactive} from "vue";
 import {Instruction, Mima} from "wasm-mima";
-import {th} from "cronstrue/dist/i18n/locales/th";
 
 class DebugInfo {
     akku: number;
