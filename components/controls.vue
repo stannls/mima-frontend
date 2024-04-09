@@ -3,12 +3,12 @@ import {store} from "~/store";
 import {compile} from "wasm-mima";
 
 function compile_action() {
-  let compiler_output = compile(store.editor_content)
-  if (compiler_output === undefined) {
-    alert("Compilation error.")
-  } else {
+  try {
+    let compiler_output = compile(store.editor_content)
     store.mima.load(compiler_output)
     store.debug_info.fromMima(store.mima)
+  } catch (e) {
+    alert(e)
   }
 }
 function run_action() {
